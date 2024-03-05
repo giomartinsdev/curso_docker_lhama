@@ -1,0 +1,6 @@
+python -m venv venv
+& ./venv/Scripts/Activate.ps1
+pip install -r requirements.txt
+pre-commit install
+$env:FLASK_APP="run.py"
+flask run
